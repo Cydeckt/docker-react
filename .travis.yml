@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Cydeckt/docker-react -f Dockerfile.dev .
+  - docker build -t josephbeerman/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Cydeckt/docker-react npm run test
+  - docker run -e CI=true josephbeerman/docker-react npm run test
